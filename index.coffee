@@ -19,7 +19,7 @@ refreshFrequency: "1d"
 style: """
   top: 5%
   left: 8%
-  font-family: yuweif,Helvetica Neue,Helvetica
+  font-family: yuweif,yuweij,Helvetica Neue,Helvetica
   font-size: 20px
   line-height: 1.5
 
