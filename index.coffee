@@ -7,8 +7,11 @@
 # Widget Settings 
 # 读取文本文件中的内容
 command:
-    " sed -n \"$((RANDOM%573))p\" \"./daily-ancient-Chinese-prose/quotes.txt\" "
-
+    "
+      quotes=\"./daily-ancient-Chinese-prose/quotes.txt\";
+      countOfQuotes=$(grep -c \"\" $quotes);
+      sed -n \"$((RANDOM%$countOfQuotes))p\" $quotes;
+    "
 # 更新频率
 refreshFrequency: "1d"
 
