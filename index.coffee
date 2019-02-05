@@ -9,7 +9,7 @@
 command:
     "
       quotes=\"./daily-ancient-Chinese-prose/quotes.txt\";
-      countOfQuotes=$(grep -c \"\" $quotes);
+      countOfQuotes=$(grep -c \"\" $quotes)+1;
       sed -n \"$((RANDOM%$countOfQuotes))p\" $quotes;
     "
 # 更新频率
